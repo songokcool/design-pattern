@@ -27,6 +27,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
 
     <pluginRepositories>
@@ -54,7 +59,9 @@
                         <phase>package</phase>
                         <configuration>
                             <password>io.xjar</password>
-                            <include>com/fibonacci/*</include>
+                            <includes>
+                                <include>com/fibonacci/*</include>
+                            </includes>
                         </configuration>
                     </execution>
                 </executions>
