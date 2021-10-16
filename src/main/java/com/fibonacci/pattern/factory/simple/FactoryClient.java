@@ -12,6 +12,10 @@ public class FactoryClient {
         operate.setNumberB(21.87d);
         double result = operate.getResult();
         System.out.println(result);
+
+        Product product = SimpleFactory.makeProduct(1);
+        assert product != null;
+        product.show();
     }
 
 }
