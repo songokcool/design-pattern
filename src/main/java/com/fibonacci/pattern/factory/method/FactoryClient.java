@@ -12,6 +12,10 @@ public class FactoryClient {
         leiFeng.wash();
         leiFeng.sweep();
         leiFeng.buyRice();
+
+        AbstractFactory factory = new ConcreteFactory1();
+        Product product = factory.createProduct();
+        product.show();
     }
 
 }
