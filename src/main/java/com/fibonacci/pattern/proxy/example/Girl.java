@@ -1,4 +1,4 @@
-package com.fibonacci.pattern.proxy.demo;
+package com.fibonacci.pattern.proxy.example;
 
 /**
  * @author fibonacci

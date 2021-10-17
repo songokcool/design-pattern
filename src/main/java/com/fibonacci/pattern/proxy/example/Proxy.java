@@ -2,17 +2,28 @@ package com.fibonacci.pattern.proxy.example;
 
 /**
  * @author fibonacci
- * @date 2021-05-19 22:17
+ * @date 2021-05-19 21:38
  */
-public class Proxy extends Subject {
+public class Proxy implements IGiveGift {
 
-    private RealSubject realSubject;
+    private Pursuit pursuit;
+
+    public Proxy(Girl girl) {
+        this.pursuit = new Pursuit(girl);
+    }
 
     @Override
-    public void request() {
-        if (realSubject == null) {
-            realSubject = new RealSubject();
-        }
-        realSubject.request();
+    public void giveDoll() {
+        pursuit.giveDoll();
+    }
+
+    @Override
+    public void giveFlowable() {
+        pursuit.giveFlowable();
+    }
+
+    @Override
+    public void giveChocolate() {
+        pursuit.giveChocolate();
     }
 }
