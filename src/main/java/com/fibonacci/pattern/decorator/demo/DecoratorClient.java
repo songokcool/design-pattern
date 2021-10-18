@@ -7,7 +7,7 @@ package com.fibonacci.pattern.decorator.demo;
 public class DecoratorClient {
 
     public static void main(String[] args) {
-        ConcreteComponent cc = new ConcreteComponent();
+        Component cc = new ConcreteComponent();
         ConcreteDecoratorA ca = new ConcreteDecoratorA();
         ConcreteDecoratorB cb = new ConcreteDecoratorB();
 
