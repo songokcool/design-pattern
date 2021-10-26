@@ -1,10 +1,12 @@
 package com.fibonacci.pattern.observer.demo;
 
 /**
+ * 具体观察者
+ *
  * @author fibonacci
  * @date 2021-05-30 23:24
  */
-public class ConcreteObserver extends Observer{
+public class ConcreteObserver extends Observer {
 
     private String name;
 
@@ -12,7 +14,7 @@ public class ConcreteObserver extends Observer{
 
     private ConcreteSubject subject;
 
-    public ConcreteObserver(ConcreteSubject subject, String name){
+    public ConcreteObserver(ConcreteSubject subject, String name) {
         this.name = name;
         this.subject = subject;
     }
