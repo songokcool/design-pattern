@@ -1,0 +1,21 @@
+package com.fibonacci.pattern.visitor.demo;
+
+/**
+ * @author fibonacci
+ * @date 2021-10-27 23:20
+ */
+public class VisitorClient {
+
+    public static void main(String[] args) {
+        ObjectStructure os = new ObjectStructure();
+        os.add(new ConcreteElementA());
+        os.add(new ConcreteElementB());
+
+        ConcreteVisitorA va = new ConcreteVisitorA();
+        os.accept(va);
+        System.out.println("------------------------");
+        ConcreteVisitorB vb = new ConcreteVisitorB();
+        os.accept(vb);
+    }
+
+}
