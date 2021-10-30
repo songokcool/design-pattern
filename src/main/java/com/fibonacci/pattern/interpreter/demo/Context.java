@@ -1,5 +1,7 @@
 package com.fibonacci.pattern.interpreter.demo;
 
+import java.util.Date;
+
 /**
  * 环境类
  *
@@ -20,4 +22,8 @@ public class Context {
 
     }
 
+    // Sat Oct 30 09:24:28 CST 2021
+    public static void main(String[] args){
+        System.out.println(new Date());
+    }
 }
